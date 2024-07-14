@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.telo {
+  background: rgb(113, 121, 118);
+  display: flex;
+  height: 100vh;
+  font-family: "Courier New";
+  font-weight: 600;
+  font-size: 30px;
+  padding: 3% 5%;
+}
+
+.page1,
+.page2 {
+  width: 45vw;
+  height: 90vh;
+}
+
+.page1 {
+  background: linear-gradient(
+    to right,
+    rgb(240, 200, 158) 0%,
+    rgb(250, 215, 166) 50%,
+    rgb(250, 220, 166) 70%,
+    rgb(210, 160, 136) 98%,
+    rgb(201, 147, 133) 100%
+  );
+
+  padding: 3% 2% 3.5% 4%;
+  box-shadow: -4px 0 15px 5px rgb(79, 66, 97);
+}
+
+.page2 {
+  background: linear-gradient(
+    to right,
+    rgb(210, 160, 136) 0%,
+    rgb(250, 215, 166) 7%,
+    rgb(250, 220, 166) 10%,
+    rgb(250, 215, 166) 20%,
+    rgb(240, 190, 146) 60%,
+    rgb(240, 200, 158) 80%
+  );
+  padding: 3% 4% 3.5% 2%;
+  box-shadow: 10px 0 15px 3px rgb(79, 66, 97);
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+.mini,
+input[type="number"] {
+  width: 100%;
+  font-family: "Courier New";
+  background-color: rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  margin: 5px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  text-align: center;
+}
+
+textarea {
+  height: 40vh; /* Занимает 50% высоты родительского элемента */
+  resize: none; /* Запрещает изменение размера textarea пользователем */
+  padding: 5px; /* Добавляет внутренний отступ для улучшения визуального восприятия */
+  margin-top: 10px;
+}
+
+.but {
+  margin: 5px;
+  font-family: "Courier New";
+  font-size: 19px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 24px;
+  padding: 5px 0;
+  width: 100%;
+  color: black;
+}
+
+.but:hover {
+  background-color: rgba(107, 107, 107, 0.2);
+}
+
+.but:active {
+  background-color: rgba(100, 100, 100, 0.2);
+  box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px 1px white;
+}
+
+.he2 {
+  text-align: center;
+}
+
+.theme {
+  text-align: center;
+  font-size: 22px;
+}
+
+.mini {
+  padding: 10px 10px 0;
+  box-sizing: border-box;
+  width: 98%;
+  text-align: center;
+}
+
+.ns {
+  overflow-y: scroll;
+  border: 2px black solid;
+  height: 66vh;
+  padding: 0;
+}
+.ns::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ns::-webkit-scrollbar-thumb {
+  background-color: rgb(210, 160, 136);
+  border-radius: 8px;
+}
+
+.ns::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.nums {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.but2 {
+  margin: 5px;
+  font-family: "Courier New";
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 24px;
+  padding: 3px 25px;
+  color: black;
+}
+
+.te {
+  text-align: left;
+  font-weight: 400;
+  padding: 5px 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
